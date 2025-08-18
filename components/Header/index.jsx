@@ -2,7 +2,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { config } from '@/config';
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
@@ -60,10 +59,8 @@ const Logo = () => (
                 whileHover={{ scale: 1.05, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
             >
-                <Image
+                <img
                     src="/logo.png"
-                    width={2000}
-                    height={2000}
                     alt='logo'
                     className='w-14 h-14 rounded-full'
                 />
@@ -82,7 +79,7 @@ const Logo = () => (
 
 const Navigation = () => (
     <motion.nav
-        className="hidden md:flex space-x-2"
+        className="hidden md:flex space-x-2 lg:space-x-4"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.5 }}
@@ -123,7 +120,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="container mx-auto flex items-center justify-between md:px-64 px-6">
+            <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 xl:px-12 max-w-7xl">
                 <Logo />
                 <Navigation />
                 <ContactButton />

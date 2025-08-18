@@ -10,15 +10,15 @@ const SectionTitle = () => (
         initial="hidden"
         animate="show"
         variants={titleAnimation}
-        className="mb-16 space-y-6"
+        className="mb-12 md:mb-16 lg:mb-20 space-y-6"
     >
 
-        <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
+        <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 lg:gap-8">
             <div className="space-y-4 max-w-2xl">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary tracking-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary tracking-tight">
                     Featured Work & Projects
                 </h2>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                     A curated selection of my professional work and personal projects,
                     showcasing expertise in{' '}
                     <span className="text-primary">front-end</span>,{' '}
@@ -27,12 +27,12 @@ const SectionTitle = () => (
                 </p>
             </div>
 
-            <div className="flex items-center">
+            <div className="flex items-center w-full lg:w-auto">
                 <Button
                     variant="expandIcon"
                     Icon={HiArrowRight}
                     iconPlacement="right"
-                    className="w-full md:w-auto rounded-2xl px-4 sm:px-5 py-5 sm:py-6 text-sm sm:text-base transition-all duration-300 shadow-lg shadow-primary/5 hover:shadow-primary/10"
+                    className="w-full lg:w-auto rounded-2xl px-4 sm:px-5 py-4 sm:py-5 text-sm sm:text-base transition-all duration-300 shadow-lg shadow-primary/5 hover:shadow-primary/10"
                     asChild
                 >
                     <a

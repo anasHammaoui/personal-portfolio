@@ -4,12 +4,6 @@ import { motion } from 'framer-motion';
 import { config } from '@/config';
 
 const Footer = () => {
-    const [currentYear, setCurrentYear] = useState(null);
-
-    useEffect(() => {
-        setCurrentYear(new Date().getFullYear());
-    }, []);
-
     return (
         <motion.footer
             initial={{ opacity: 0 }}
@@ -19,7 +13,7 @@ const Footer = () => {
         >
             <div className="text-center">
                 <div className="text-sm text-muted-foreground">
-                    © {currentYear || '2024'} {config.developer.name} {config.developer.last_name}. All rights reserved.
+                    ©2025 {config.developer.name} {config.developer.last_name}. All rights reserved.
                 </div>
             </div>
         </motion.footer>

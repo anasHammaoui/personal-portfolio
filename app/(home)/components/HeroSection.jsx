@@ -47,7 +47,7 @@ const HeroSection = () => {
     <section className="min-h-[calc(100vh-140px)] flex items-center justify-center relative">
       <BackgroundPresets.Minimal />
 
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-7xl">
         <motion.div
           variants={containerAnimation}
           initial="hidden"
@@ -65,7 +65,7 @@ const HeroSection = () => {
           <div className="space-y-4">
             <motion.h1
               variants={itemAnimation}
-              className="text-4xl md:text-7xl font-bold tracking-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight"
             >
               <motion.span
                 variants={textAnimation}
@@ -75,7 +75,7 @@ const HeroSection = () => {
               </motion.span>
               <motion.span
                 variants={textAnimation}
-                className="block text-white/60 text-2xl md:text-4xl"
+                className="block text-white/60 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
               >
                 I build things for the web
               </motion.span>
@@ -84,7 +84,7 @@ const HeroSection = () => {
 
           <motion.p
             variants={itemAnimation}
-            className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto"
+            className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto px-4"
           >
             I&apos;m a full-stack developer specializing in building exceptional digital experiences.
             Currently, I&apos;m focused on building accessible, human-centered Web Apps.
@@ -99,7 +99,7 @@ const HeroSection = () => {
                 variant="expandIcon"
                 Icon={HiArrowRight}
                 iconPlacement="right"
-                className="rounded-full px-6 py-6 text-base transition-all duration-300 hover:scale-105 font-semibold"
+                className="rounded-full px-4 sm:px-6 py-4 sm:py-6 text-sm sm:text-base transition-all duration-300 hover:scale-105 font-semibold"
               >
                 View Projects
               </Button>
@@ -111,7 +111,7 @@ const HeroSection = () => {
             transition={{ delay: 1, duration: 1 }}
             className="absolute -z-10 inset-0 pointer-events-none"
           >
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[400px] md:w-[500px] h-[300px] sm:h-[400px] md:h-[500px] bg-primary/5 rounded-full blur-3xl" />
           </motion.div>
         </motion.div>
       </div>

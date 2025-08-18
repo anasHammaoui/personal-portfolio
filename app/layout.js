@@ -17,7 +17,7 @@ const geistSans = localFont({
 export const metadata = {
   title: "Anas Hammaoui - Fullstack Developer Portfolio",
   description: "Experienced fullstack developer specializing in modern web technologies. View my projects, skills, and experience.",
-  keywords: "fullstack developer,backend developer, frontend developer, web development, JavaScript,JS, NextJs, React, Laravel, portfolio",
+  keywords: "anas hammaoui, anas hammaoui portfolio, fullstack developer, backend developer, frontend developer, web development, JavaScript, JS, NextJs, React, Laravel, portfolio",
   author: "Anas Hammaoui",
   robots: "index, follow",
 };

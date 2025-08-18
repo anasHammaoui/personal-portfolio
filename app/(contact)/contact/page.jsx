@@ -29,7 +29,7 @@ const ContactPage = () => {
                 blurAmount="3xl"
             />
 
-            <div className="container mx-auto px-6 py-20 flex flex-col items-center">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-7xl py-20 flex flex-col items-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

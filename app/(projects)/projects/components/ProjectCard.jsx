@@ -17,9 +17,9 @@ export const ProjectCard = ({ project, index }) => {
         <>
             <motion.div
                 variants={itemAnimation}
-                className="group flex flex-col sm:flex-row items-stretch gap-6 bg-secondary/5 hover:bg-secondary/10 p-4 rounded-xl transition-colors duration-300"
+                className="group flex flex-col lg:flex-row items-stretch gap-4 md:gap-6 lg:gap-8 bg-secondary/5 hover:bg-secondary/10 p-4 md:p-6 rounded-xl transition-colors duration-300"
             >
-                <div className="sm:w-1/3">
+                <div className="lg:w-1/3 w-full">
                     <div 
                         className="relative aspect-[16/10] rounded-lg overflow-hidden cursor-pointer"
                         onClick={openSlider}
@@ -27,7 +27,8 @@ export const ProjectCard = ({ project, index }) => {
                         <Image
                             src={project.image}
                             alt={project.title}
-                            className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
+                            fill
+                            className="object-cover transform group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                         
@@ -41,8 +42,8 @@ export const ProjectCard = ({ project, index }) => {
                     </div>
                 </div>
 
-                <div className="sm:w-2/3 flex flex-col justify-between py-2">
-                    <div className="space-y-3">
+                <div className="lg:w-2/3 w-full flex flex-col justify-between py-2">
+                    <div className="space-y-3 md:space-y-4">
                         <div className="flex items-center justify-between">
                             <h3 
                                 className="text-lg font-semibold text-primary cursor-pointer hover:text-primary/80 transition-colors"

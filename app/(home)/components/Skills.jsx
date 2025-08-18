@@ -110,7 +110,7 @@ const SkillsSection = () => {
 
     return (
         <section className="py-24" id="skills">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-7xl">
                 <motion.div
                     variants={containerAnimation}
                     initial="hidden"

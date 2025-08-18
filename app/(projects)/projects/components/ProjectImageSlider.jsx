@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import Image from 'next/image';
 
 const ProjectImageSlider = ({ project, isOpen, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -116,7 +115,7 @@ const ProjectImageSlider = ({ project, isOpen, onClose }) => {
                     {/* Main Image Display */}
                     <div className="relative flex-1 flex items-center justify-center p-6">
                         <div className="relative w-full h-[65vh] flex items-center justify-center">
-                            <Image
+                            <img
                                 src={images[currentImageIndex]}
                                 alt={`${project.title} - Image ${currentImageIndex + 1}`}
                                 className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
@@ -155,7 +154,7 @@ const ProjectImageSlider = ({ project, isOpen, onClose }) => {
                                             : 'border-secondary/20 hover:border-secondary/40'
                                     }`}
                                 >
-                                    <Image
+                                    <img
                                         src={image}
                                         alt={`Thumbnail ${index + 1}`}
                                         className="w-full h-full object-contain"

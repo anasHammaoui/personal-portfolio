@@ -221,7 +221,7 @@ const GithubProjects = () => {
 
     return (
         <section className="py-20 relative">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-7xl">
                 <div className="space-y-16">
                     <div className="space-y-4 text-center">
                         <motion.div
