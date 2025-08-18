@@ -8,10 +8,9 @@ import { config } from '@/config';
 
 const getLevelPercentage = (level) => {
     switch (level) {
-        case 'Expert': return 95;
-        case 'Advanced': return 85;
-        case 'Intermediate': return 70;
-        case 'Beginner': return 50;
+        case 'Advanced': return 95;
+        case 'Intermediate': return 75;
+        case 'Beginner': return 60;
         default: return 75;
     }
 };
@@ -98,7 +97,7 @@ const CategorySection = ({ category }) => (
             </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {category.skills.map((skill, idx) => (
                 <SkillCard key={idx} skill={skill} bgClass={category.bgClass} />
             ))}

@@ -47,11 +47,17 @@ export const config = {
             bgClass: "bg-blue-500/10",
             iconClass: "text-blue-500",
             skills: [
-                { name: "React", level: "Advanced", hot: true },
-                { name: "TypeScript", level: "Advanced" },
-                { name: "TailwindCSS", level: "Expert" },
+                { name: "HTML CSS", level: "Advanced" },
+                { name: "Bootstrap", level: "Intermediate" },
+                { name: "TailwindCSS", level: "Advanced" },
                 { name: "JavaScript", level: "Advanced" },
-                { name: "Livewire", level: "Intermediate", hot: true }
+                { name: "TypeScript", level: "Intermediate" },
+                { name: "React.js", level: "Advanced", hot: true },
+                { name: "Next.js", level: "Advanced", hot: true },
+                { name: "Material-UI", level: "Intermediate" },
+                { name: "Shadcn", level: "Intermediate" },
+                { name: "Livewire", level: "Intermediate" },
+                { name: "Blade", level: "Advanced" }
             ]
         },
         {
@@ -61,23 +67,29 @@ export const config = {
             bgClass: "bg-emerald-500/10",
             iconClass: "text-emerald-500",
             skills: [
-                { name: "Laravel", level: "Advanced", hot: true },
                 { name: "PHP", level: "Advanced" },
+                { name: "Laravel", level: "Advanced", hot: true },
+                { name: "REST API", level: "Advanced", hot: true },
+                { name: "C", level: "Intermediate" },
                 { name: "MySQL", level: "Advanced" },
-                { name: "Laravel API", level: "Advanced", hot: true }
+                { name: "PostgreSQL", level: "Advanced" }
             ]
         },
         {
-            title: "Programs & Tools",
+            title: "Tools & Methodologies",
             icon: <HiCube />,
-            description: "Development & Productivity Tools",
+            description: "Development & Project Management",
             bgClass: "bg-orange-500/10",
             iconClass: "text-orange-500",
             skills: [
                 { name: "Docker", level: "Intermediate", hot: true },
-                { name: "GitLab CI/CD", level: "Intermediate" },
-                { name: "VS Code", level: "Expert" },
-                { name: "Git", level: "Advanced" }
+                { name: "Git", level: "Advanced" },
+                { name: "GitHub", level: "Advanced", hot: true },
+                { name: "GitLab", level: "Advanced" },
+                { name: "Jira", level: "Advanced", hot: true },
+                { name: "UML", level: "Intermediate" },
+                { name: "Figma", level: "Advanced", hot: true },
+                { name: "Scrum", level: "Intermediate" }
             ]
         }
     ],
