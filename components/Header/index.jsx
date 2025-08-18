@@ -107,7 +107,7 @@ const ContactButton = () => (
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.4, duration: 0.5 }}
     >
-        <Link href="/resume.pdf" target='_blank' download>
+        <Link href="/Anas-Hammaoui.pdf" target='_blank' download>
             <Button className="rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200">
                 My Resume
             </Button>

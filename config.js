@@ -72,7 +72,7 @@ export const config = {
         {
             id: 3,
             title: "OpenSNZ Attendance System",
-            description: "A comprehensive employee attendance management system built for OpenSNZ company. Features front office for employee check-in/check-out and pause tracking, plus back office for HR and admin to monitor employee status, generate reports, and manage settings.",
+            description: "A comprehensive employee attendance management system built for OpenSNZ company. Features front office for employee check-in/check-out and pause tracking, plus back office for HR and admin to monitor employee status, generate reports, manage settings and pwa support.",
             image: "/portfolio/opensnz/1.png",
             images: [
                 "/portfolio/opensnz/1.png",
