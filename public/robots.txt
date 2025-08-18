@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://anashammaoui.me
+
+# Sitemaps
+Sitemap: https://anashammaoui.me/sitemap.xml
