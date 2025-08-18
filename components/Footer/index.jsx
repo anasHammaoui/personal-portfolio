@@ -19,7 +19,7 @@ const Footer = () => {
         >
             <div className="text-center">
                 <div className="text-sm text-muted-foreground">
-                    © {currentYear || '2024'} {config.developer.name}. All rights reserved.
+                    © {currentYear || '2024'} {config.developer.name} {config.developer.last_name}. All rights reserved.
                 </div>
             </div>
         </motion.footer>

@@ -1,9 +1,10 @@
 import { FaDiscord, FaGithub, FaMapPin } from "react-icons/fa";
-import { HiCode, HiCube, HiDatabase, HiMail } from "react-icons/hi";
+import { HiCode, HiCube, HiDatabase, HiMail, HiPhone } from "react-icons/hi";
 
 export const config = {
     developer: {
         name: "Anas",
+        last_name: "Hammaoui"
     },
     social: {
         github: "anasHammaoui",
@@ -98,6 +99,12 @@ export const config = {
             label: "Email",
             value: "anashammaoui07@gmail.com",
             link: "mailto:anashammaoui07@gmail.com"
+        },
+        {
+            icon: <HiPhone className="w-5 h-5" />,
+            label: "Phone",
+            value: "+212691939918",
+            link: "tel:+212691939918"
         },
         {
             icon: <FaMapPin className="w-5 h-5" />,
