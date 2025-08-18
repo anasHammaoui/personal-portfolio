@@ -21,9 +21,9 @@ const SectionTitle = () => (
                 <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     A curated selection of my professional work and personal projects,
                     showcasing expertise in{' '}
-                    <span className="text-primary">full-stack development</span>,{' '}
-                    <span className="text-primary">UI/UX design</span>, and{' '}
-                    <span className="text-primary">cloud architecture</span>.
+                    <span className="text-primary">front-end</span>,{' '}
+                    <span className="text-primary">back-end</span>, and{' '}
+                    <span className="text-primary">full stack development</span>.
                 </p>
             </div>
 
@@ -56,7 +56,7 @@ const SectionTitle = () => (
             </div>
             <div className="w-px h-8 sm:h-10 bg-primary/10 flex-shrink-0" />
             <div className="space-y-1 flex-shrink-0">
-                <span className="text-xl sm:text-2xl font-bold text-primary">3+</span>
+                <span className="text-xl sm:text-2xl font-bold text-primary">1+</span>
                 <p className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">
                     Years Experience
                 </p>

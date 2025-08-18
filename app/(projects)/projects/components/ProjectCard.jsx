@@ -1,36 +1,58 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaImages } from 'react-icons/fa';
 import { itemAnimation } from './Animations';
+import ProjectImageSlider from './ProjectImageSlider';
 
-export const ProjectCard = ({ project, index }) => (
-    <motion.div
-        variants={itemAnimation}
-        className="group flex flex-col sm:flex-row items-stretch gap-6 bg-secondary/5 hover:bg-secondary/10 p-4 rounded-xl transition-colors duration-300"
-    >
-        <div className="sm:w-1/3">
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-                <img
-                    src={project.image}
-                    alt={project.title}
-                    className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
-            </div>
-        </div>
+export const ProjectCard = ({ project, index }) => {
+    const [isSliderOpen, setIsSliderOpen] = useState(false);
 
-        <div className="sm:w-2/3 flex flex-col justify-between py-2">
-            <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-primary">
-                        {project.title}
-                    </h3>
-                    <span className="text-xs text-muted-foreground">
-                        #{String(index + 1).padStart(2, '0')}
-                    </span>
+    const openSlider = () => setIsSliderOpen(true);
+    const closeSlider = () => setIsSliderOpen(false);
+
+    return (
+        <>
+            <motion.div
+                variants={itemAnimation}
+                className="group flex flex-col sm:flex-row items-stretch gap-6 bg-secondary/5 hover:bg-secondary/10 p-4 rounded-xl transition-colors duration-300"
+            >
+                <div className="sm:w-1/3">
+                    <div 
+                        className="relative aspect-[16/10] rounded-lg overflow-hidden cursor-pointer"
+                        onClick={openSlider}
+                    >
+                        <img
+                            src={project.image}
+                            alt={project.title}
+                            className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
+                        
+                        {/* View Images Overlay */}
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div className="flex items-center gap-2 bg-black/60 px-4 py-2 rounded-full backdrop-blur-sm">
+                                <FaImages className="w-4 h-4 text-white" />
+                                <span className="text-white text-sm font-medium">View Gallery</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div className="sm:w-2/3 flex flex-col justify-between py-2">
+                    <div className="space-y-3">
+                        <div className="flex items-center justify-between">
+                            <h3 
+                                className="text-lg font-semibold text-primary cursor-pointer hover:text-primary/80 transition-colors"
+                                onClick={openSlider}
+                            >
+                                {project.title}
+                            </h3>
+                            <span className="text-xs text-muted-foreground">
+                                #{String(index + 1).padStart(2, '0')}
+                            </span>
+                        </div>
 
                 <p className="text-sm text-muted-foreground line-clamp-2">
                     {project.description}
@@ -48,23 +70,33 @@ export const ProjectCard = ({ project, index }) => (
                 </div>
             </div>
 
-            <div className="flex items-center gap-3 pt-4">
-                <Button
-                    size="sm"
-                    className="rounded-full h-8 px-4 text-xs"
-                    asChild
-                >
-                    <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex cursor-pointer items-center gap-2"
+            {project.github && (
+                <div className="flex items-center gap-3 pt-4">
+                    <Button
+                        size="sm"
+                        className="rounded-full h-8 px-4 text-xs"
+                        asChild
                     >
-                        Link to GitHub
-                        <FaExternalLinkAlt className="w-3 h-3" />
-                    </a>
-                </Button>
-            </div>
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex cursor-pointer items-center gap-2"
+                        >
+                            Link to GitHub
+                            <FaExternalLinkAlt className="w-3 h-3" />
+                        </a>
+                    </Button>
+                </div>
+            )}
         </div>
     </motion.div>
-);
+
+    <ProjectImageSlider 
+        project={project}
+        isOpen={isSliderOpen}
+        onClose={closeSlider}
+    />
+</>
+    );
+};
