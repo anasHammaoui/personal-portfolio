@@ -9,12 +9,23 @@ import { config } from '@/config';
 
 const ContactPage = () => {
     const handleSubmit = async (formData) => {
-        try {
-            console.log('Form submitted:', formData);
-            toast.success("Thank you for your message. I'll get back to you soon.");
+        try {            
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+            if (result.ok) {
+                toast.success("Thank you for your message! I'll get back to you soon. 🚀");
+            } else {
+                toast.error(result.error || "Something went wrong. Please try again later.");
+            }
         } catch (error) {
-            console.error('Error submitting form:', error);
-            toast.error("Something went wrong. Please try again later.");
+            toast.error("Network error. Please check your connection and try again.");
         }
     };
 

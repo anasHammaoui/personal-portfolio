@@ -155,8 +155,8 @@ export const config = {
         {
             icon: <HiMail className="w-5 h-5" />,
             label: "Email",
-            value: "anashammaoui07@gmail.com",
-            link: "mailto:anashammaoui07@gmail.com"
+            value: "anashammaoui.dev@gmail.com",
+            link: "mailto:anashammaoui.dev@gmail.com"
         },
         {
             icon: <HiPhone className="w-5 h-5" />,

@@ -101,6 +101,16 @@ const ContactForm = ({ onSubmit }) => {
                         <span className="text-xs text-red-500">{errors.message.message}</span>
                     )}
                 </div>
+
+                {/* Honeypot field - hidden from users */}
+                <div style={{ display: 'none' }}>
+                    <Input
+                        {...register("website")}
+                        type="text"
+                        tabIndex={-1}
+                        autoComplete="off"
+                    />
+                </div>
             </div>
 
             <Button 
