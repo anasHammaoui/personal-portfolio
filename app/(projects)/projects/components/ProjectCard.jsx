@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { FaExternalLinkAlt, FaImages } from 'react-icons/fa';
 import { itemAnimation } from './Animations';
 import ProjectImageSlider from './ProjectImageSlider';
+import Image from 'next/image';
 
 export const ProjectCard = ({ project, index }) => {
     const [isSliderOpen, setIsSliderOpen] = useState(false);
@@ -23,7 +24,7 @@ export const ProjectCard = ({ project, index }) => {
                         className="relative aspect-[16/10] rounded-lg overflow-hidden cursor-pointer"
                         onClick={openSlider}
                     >
-                        <img
+                        <Image
                             src={project.image}
                             alt={project.title}
                             className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"

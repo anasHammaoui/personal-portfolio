@@ -71,7 +71,7 @@ const HeroSection = () => {
                 variants={textAnimation}
                 className="block text-primary mb-2"
               >
-                Hi, I'm {config.developer.name}
+                Hi, I&apos;m {config.developer.name}
               </motion.span>
               <motion.span
                 variants={textAnimation}
@@ -86,8 +86,8 @@ const HeroSection = () => {
             variants={itemAnimation}
             className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-            I'm a full-stack developer specializing in building exceptional digital experiences.
-            Currently, I'm focused on building accessible, human-centered Web Apps.
+            I&apos;m a full-stack developer specializing in building exceptional digital experiences.
+            Currently, I&apos;m focused on building accessible, human-centered Web Apps.
           </motion.p>
 
           <motion.div
