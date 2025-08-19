@@ -1,4 +1,4 @@
-import { FaDiscord, FaGithub, FaMapPin } from "react-icons/fa";
+import { FaDiscord, FaGithub, FaLinkedin, FaLinkedinIn, FaMapPin } from "react-icons/fa";
 import { HiCode, HiCube, HiDatabase, HiMail, HiPhone } from "react-icons/hi";
 
 export const config = {
@@ -8,7 +8,7 @@ export const config = {
     },
     social: {
         github: "anasHammaoui",
-        discord: "928057859323871302"
+        linkedin: "anashammaoui"
     },
     NAV_ITEMS: [
         { href: '/projects', label: 'Projects' },
@@ -141,16 +141,16 @@ export const config = {
     ],
     contactInfo: [
         {
-            icon: <FaDiscord className="w-5 h-5" />,
-            label: "Discord",
-            value: "ahammaoui",
-            link: `https://discord.com/users/928057859323871302`
-        },
-        {
             icon: <FaGithub className="w-5 h-5" />,
             label: "GitHub",
             value: "@anasHammaoui",
             link: `https://github.com/anasHammaoui`
+        },
+        {
+            icon: <FaLinkedinIn className="w-5 h-5" />,
+            label: "LinkedIn",
+            value: "anashammaoui",
+            link: "https://www.linkedin.com/in/anas-hammaoui"
         },
         {
             icon: <HiMail className="w-5 h-5" />,
