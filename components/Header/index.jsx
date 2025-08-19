@@ -104,7 +104,7 @@ const ContactButton = () => (
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.4, duration: 0.5 }}
     >
-        <Link href="/anashammaoui.pdf" target='_blank' download>
+        <Link href="/anashammaoui.pdf" target='_blank' prefetch={false} download>
             <Button className="rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200">
                 My Resume
             </Button>
@@ -156,7 +156,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
                                 </Link>
                             );
                         })}
-                        <Link href="/anashammaoui.pdf" target='_blank' download onClick={() => setIsOpen(false)}>
+                        <Link href="/anashammaoui.pdf" target='_blank' prefetch={false} download onClick={() => setIsOpen(false)}>
                             <Button className="rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200 px-8 py-4 text-lg">
                                 My Resume
                             </Button>
