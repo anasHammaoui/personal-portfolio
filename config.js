@@ -1,4 +1,4 @@
-import { FaDiscord, FaGithub, FaLinkedin, FaLinkedinIn, FaMapPin } from "react-icons/fa";
+import {FaGithub, FaLinkedinIn, FaMapPin } from "react-icons/fa";
 import { HiCode, HiCube, HiDatabase, HiMail, HiPhone } from "react-icons/hi";
 
 export const config = {
