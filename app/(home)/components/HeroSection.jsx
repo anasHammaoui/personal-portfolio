@@ -71,7 +71,7 @@ const HeroSection = () => {
                 variants={textAnimation}
                 className="block text-primary mb-2"
               >
-                Hi, I&apos;m {config.developer.name}
+                Hi, I&apos;m {config.developer.name} {config.developer.last_name}
               </motion.span>
               <motion.span
                 variants={textAnimation}
