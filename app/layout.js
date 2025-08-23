@@ -21,7 +21,14 @@ export const metadata = {
   author: "Anas Hammaoui",
   robots: "index, follow",
 };
-
+metadata.openGraph = {
+  title: "Anas Hammaoui - Fullstack Developer Portfolio",
+  description: "Experienced fullstack developer specializing in modern web technologies.",
+  url: "https://anashammaoui.me",
+  siteName: "Anas Hammaoui Portfolio",
+  images: [{ url: "https://anashammaoui.me/logo.png", width: 1200, height: 630 }],
+  type: "website",
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
