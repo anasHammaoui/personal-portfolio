@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://anashammaoui.me
+Host: https://www.anashammaoui.me
 
 # Sitemaps
-Sitemap: https://anashammaoui.me/sitemap.xml
+Sitemap: https://www.anashammaoui.me/sitemap.xml
